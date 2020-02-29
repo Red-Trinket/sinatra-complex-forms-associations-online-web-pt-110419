@@ -35,7 +35,7 @@ describe "Owners Controller" do
       check(@pet1.id)
       click_button "Create Owner"
       @owner = Owner.last
-      expect(@owner.name).to eq(nil)
+      expect(@owner.name).to eq("Sophie")
       expect(@owner.pets.first.name).to eq("Bessie")
     end
 
